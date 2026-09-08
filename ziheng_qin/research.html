@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research by Ziheng Qin: agents, efficient deep learning, data-centric AI, data-model co-evolution, and multimodal learning.">
+    <title>Research | Ziheng Qin</title>
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-shell header-inner">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-text">
+            <span class="brand-name">Ziheng Qin</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a aria-current="page" href="research.html">Research</a>
+          <a href="index.html#publications">Publications</a>
+          <a href="index.html#awards">Awards</a>
+          <a href="resume.html">CV</a>
+          <a href="blog/index.html">Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-shell">
+      <section class="page-head">
+        <p class="eyebrow">Research</p>
+        <h1>Efficient learning through better data and optimization.</h1>
+        <p class="lead">My research centers on making learning and agent systems more efficient, especially through dynamic data pruning, data cleaning and growth, data-model co-evolution, scalable optimization, and harness scaling for long-horizon agents.</p>
+        <ul class="profile-links" aria-label="Research links">
+          <li><a href="https://scholar.google.com/citations?user=I04VhPMAAAAJ&hl=en">Google Scholar</a></li>
+          <li><a href="https://github.com/henryqin1997">GitHub</a></li>
+          <li><a href="mailto:henryqin1997@gmail.com">Email</a></li>
+        </ul>
+      </section>
+
+      <section class="band two-column">
+        <aside class="toc" aria-label="Page sections">
+          <strong>Sections</strong>
+          <a href="#interests">Interests</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Publications</a>
+          <a href="#collaborations">Collaborations</a>
+        </aside>
+        <div class="stack">
+          <section id="interests" class="cv-block">
+            <h2>Research Interests</h2>
+            <p>I work on practical methods that improve training and agent execution efficiency while preserving final quality. Current interests include data-centric AI, optimization for large-scale training, multimodal learning, agent runtimes, and systems for continuously improving datasets and models.</p>
+            <ul class="pill-list">
+              <li>Agents</li>
+              <li>Deep learning efficiency</li>
+              <li>Data</li>
+              <li>Optimizer</li>
+              <li>Large-scale training</li>
+              <li>Multimodal learning</li>
+              <li>Data-model co-evolution</li>
+            </ul>
+            <div class="metric-grid">
+              <div class="metric">
+                <strong>441</strong>
+                <span>Google Scholar citations, checked Aug 2026</span>
+              </div>
+              <div class="metric">
+                <strong>6</strong>
+                <span>h-index</span>
+              </div>
+              <div class="metric">
+                <strong>3</strong>
+                <span>i10-index</span>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" class="cv-block">
+            <h2>Selected Projects</h2>
+            <div class="cv-row">
+              <span class="date">arXiv 2026</span>
+              <div>
+                <h3>StateM</h3>
+                <p>An agent-native runtime for harness scaling on Terminal-Bench 2.1. StateM organizes long-horizon execution around durable states, phase-local context, checked transitions, recoverable runbooks, and versioned procedural practices.</p>
+                <p class="role-note"><a href="https://arxiv.org/abs/2608.15089">arXiv</a> · <a href="https://github.com/henryqin1997/statem">Code</a></p>
+              </div>
+            </div>
+            <div class="cv-row">
+              <span class="date">ICML 2025</span>
+              <div>
+                <h3>Info-Coevolution</h3>
+                <p>An efficient framework for data-model co-evolution. The method targets active learning settings where datasets grow over time and models must improve under realistic annotation and compute budgets.</p>
+                <p class="role-note">Research collaboration between HPC-AI Lab and TikTok; accepted to ICML 2025.</p>
+              </div>
+            </div>
+            <div class="cv-row">
+              <span class="date">ICLR 2024 Oral</span>
+              <div>
+                <h3>InfoBatch</h3>
+                <p>A lossless training acceleration framework based on unbiased dynamic data pruning. It achieves practical savings across classification, segmentation, detection, vision pretraining, diffusion, and instruction tuning workloads.</p>
+              </div>
+            </div>
+            <div class="cv-row">
+              <span class="date">ECCV 2024</span>
+              <div>
+                <h3>Dataset Growth</h3>
+                <p>An efficient online algorithm for data cleaning and selection. It maintains growing datasets with awareness of cleanliness, diversity, and sampling value for single-modal and multimodal training.</p>
+              </div>
+            </div>
+            <div class="cv-row">
+              <span class="date">ICML 2025</span>
+              <div>
+                <h3>MERIT</h3>
+                <p>A maximum-normalized element-wise ratio optimizer for large-batch language model training, designed to improve stability and enable larger effective batch sizes.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="publications" class="cv-block">
+            <h2>Selected Publications</h2>
+            <div class="publication-list">
+              <article class="publication">
+                <h3>StateM: Reaching 95.3% Raw Accuracy, or a $15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling</h3>
+                <p class="publication-meta">Ziheng Qin, Yaxin Lu, Zhangyang Atlas Wang, Kai Wang. arXiv:2608.15089, 2026.</p>
+                <p class="publication-note"><a href="https://arxiv.org/abs/2608.15089">arXiv</a> · <a href="https://github.com/henryqin1997/statem">Code</a></p>
+              </article>
+              <article class="publication">
+                <h3>InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning</h3>
+                <p class="publication-meta">Ziheng Qin, Kai Wang, Zangwei Zheng, Jianyang Gu, Xiangyu Peng, Zhaopan Xu, Daquan Zhou, Lei Shang, Baigui Sun, Xuansong Xie, Yang You. ICLR 2024 Oral.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:d1gkVwhDpl0C">Scholar entry</a></p>
+              </article>
+              <article class="publication">
+                <h3>Info-Coevolution: An Efficient Framework for Data Model Coevolution</h3>
+                <p class="publication-meta">Ziheng Qin, Hailun Xu, Wei Chee Yew, Qi Jia, Yang Luo, Kanchan Sarkar, Danhui Guan, Kai Wang, Yang You. ICML 2025.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:L8Ckcad2t8MC">Scholar entry</a></p>
+              </article>
+              <article class="publication">
+                <h3>Dataset Growth</h3>
+                <p class="publication-meta">Ziheng Qin, Zhaopan Xu, Yukun Zhou, Zangwei Zheng, Zebang Cheng, Hao Tang, Lei Shang, Baigui Sun, Xiaojiang Peng, Radu Timofte, Hongxun Yao, Kai Wang, Yang You. ECCV 2024.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:ULOm3_A8WrAC">Scholar entry</a></p>
+              </article>
+              <article class="publication">
+                <h3>MERIT: Maximum-normalized Element-wise Ratio for Language Model Large-batch Training</h3>
+                <p class="publication-meta">Yang Luo, Zangwei Zheng, Ziheng Qin, Zirui Zhu, Yong Liu, Yang You. ICML 2025.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:QIV2ME_5wuYC">Scholar entry</a></p>
+              </article>
+              <article class="publication">
+                <h3>Preventing Zero-shot Transfer Degradation in Continual Learning of Vision-language Models</h3>
+                <p class="publication-meta">Zangwei Zheng, Mingyuan Ma, Kai Wang, Ziheng Qin, Xiangyu Yue, Yang You. ICCV 2023.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:u-x6o8ySG0sC">Scholar entry</a></p>
+              </article>
+              <article class="publication">
+                <h3>CowClip: Reducing CTR Prediction Model Training Time from 12 Hours to 10 Minutes on 1 GPU</h3>
+                <p class="publication-meta">Zangwei Zheng, Pengtai Xu, Xuan Zou, Da Tang, Zhen Li, Chenguang Xi, Peng Wu, Leqi Zou, Yijie Zhu, Ming Chen, Xiangzhuo Ding, Fuzhao Xue, Ziheng Qin, Youlong Cheng, Yang You. AAAI 2023, Distinguished Paper Award.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:u5HHmVD_uO8C">Scholar entry</a></p>
+              </article>
+              <article class="publication">
+                <h3>HY-WU (Part I): An Extensible Functional Neural Memory Framework and an Instantiation in Text-Guided Image Editing</h3>
+                <p class="publication-meta">Tencent HY Team. arXiv preprint, 2026.</p>
+                <p class="publication-note"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:TQgYirikUcIC">Scholar entry</a></p>
+              </article>
+            </div>
+          </section>
+
+          <section id="collaborations" class="cv-block">
+            <h2>Research Collaborations</h2>
+            <div class="cv-row">
+              <span class="date">2024 - 2025</span>
+              <div>
+                <h3>TikTok · Data-Model Co-evolution</h3>
+                <p>Proposed and led a collaboration between HPC-AI Lab and TikTok on efficient active learning and data-model co-evolution, with research funding granted by TikTok and a resulting ICML 2025 paper.</p>
+              </div>
+            </div>
+            <div class="cv-row">
+              <span class="date">2023 - 2024</span>
+              <div>
+                <h3>Ali Tongyi Lab · Data-Centric AI</h3>
+                <p>Worked on data curation and efficient training research, leading to first-author publications at ICLR 2024 and ECCV 2024.</p>
+              </div>
+            </div>
+            <div class="cv-row">
+              <span class="date">2026</span>
+              <div>
+                <h3>Tencent Hunyuan Lab · Functional Neural Memory</h3>
+                <p>Collaborated on inference-time adaptive neural networks and functional neural memory for text-guided image editing.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-inner">
+        <span>© 2026 Ziheng Qin</span>
+        <span class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resume.html">CV</a>
+          <a href="blog/index.html">Blog</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

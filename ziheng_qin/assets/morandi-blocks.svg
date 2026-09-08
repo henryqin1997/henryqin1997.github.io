@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title desc">
+  <title id="title">Morandi blocks for a personal research website</title>
+  <desc id="desc">A quiet composition of muted color blocks, ruled lines, and note-like panels.</desc>
+  <rect width="640" height="800" fill="#fffdf9"/>
+  <rect x="46" y="48" width="548" height="704" fill="#f7f3ed" stroke="#292724" stroke-width="3"/>
+  <rect x="88" y="92" width="154" height="154" fill="#a8b2a0" stroke="#292724" stroke-width="3"/>
+  <rect x="260" y="92" width="292" height="70" fill="#c6a293" stroke="#292724" stroke-width="3"/>
+  <rect x="260" y="176" width="292" height="70" fill="#9cafb8" stroke="#292724" stroke-width="3"/>
+  <path d="M88 292H552" stroke="#8c8176" stroke-width="3"/>
+  <path d="M88 326H500" stroke="#d6cabe" stroke-width="8"/>
+  <path d="M88 366H452" stroke="#d6cabe" stroke-width="8"/>
+  <path d="M88 406H532" stroke="#d6cabe" stroke-width="8"/>
+  <rect x="88" y="464" width="220" height="142" fill="#b8a2aa" stroke="#292724" stroke-width="3"/>
+  <rect x="332" y="464" width="220" height="142" fill="#ebe2d8" stroke="#292724" stroke-width="3"/>
+  <path d="M366 506H514" stroke="#8c8176" stroke-width="4"/>
+  <path d="M366 542H488" stroke="#8c8176" stroke-width="4"/>
+  <path d="M366 578H526" stroke="#8c8176" stroke-width="4"/>
+  <rect x="88" y="648" width="88" height="48" fill="#c4b27f" stroke="#292724" stroke-width="3"/>
+  <path d="M202 672H552" stroke="#8c8176" stroke-width="3"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Ziheng Qin profile placeholder</title>
+  <desc id="desc">A simple Morandi color portrait placeholder with the initials ZQ.</desc>
+  <rect width="400" height="400" fill="#f7f3ed"/>
+  <rect x="32" y="32" width="336" height="336" rx="168" fill="#ebe2d8" stroke="#8c8176" stroke-width="3"/>
+  <path d="M85 270L245 110H105V78H304L145 238H306V270H85Z" fill="#292724"/>
+  <path d="M264 302C227 302 198 274 198 236C198 198 227 170 264 170C301 170 330 198 330 236C330 252 325 267 316 278L342 304L321 325L294 298C285 301 275 302 264 302ZM264 272C280 272 293 259 293 236C293 213 280 200 264 200C248 200 235 213 235 236C235 259 248 272 264 272Z" fill="#9cafb8"/>
+  <rect x="62" y="62" width="42" height="42" fill="#a8b2a0" stroke="#8c8176" stroke-width="2"/>
+  <rect x="296" y="296" width="42" height="42" fill="#c6a293" stroke="#8c8176" stroke-width="2"/>
+</svg>

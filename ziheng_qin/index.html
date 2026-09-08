@@ -1,175 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziheng Qin - Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background: #fff;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container clearfix">
-            <div id="branding">
-                <h1>Ziheng Qin</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ziheng Qin's academic homepage: agents, efficient deep learning, data-centric AI, large-scale training, and multimodal learning.">
+    <title>Ziheng Qin | Academic Homepage</title>
+    <link rel="stylesheet" href="styles/site.css">
+  </head>
+  <body>
+    <!-- Lucide 0.468.0 icons, ISC license: assets/icons/LICENSE. -->
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+          <rect width="20" height="16" x="2" y="4" rx="2" />
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+        </symbol>
+        <symbol id="icon-scholar" viewBox="0 0 24 24">
+          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+          <path d="M22 10v6" />
+          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24">
+          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+          <path d="M9 18c-4.51 2-5-2-7-2" />
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect width="4" height="12" x="2" y="9" />
+          <circle cx="4" cy="4" r="2" />
+        </symbol>
+        <symbol id="icon-award" viewBox="0 0 24 24">
+          <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+          <circle cx="12" cy="8" r="6" />
+        </symbol>
+      </defs>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-shell header-inner">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-text">
+            <span class="brand-name">Ziheng Qin</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a aria-current="page" href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#awards">Awards</a>
+          <a href="resume.html">CV</a>
+          <a href="blog/index.html">Blog</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hi, I'm Ziheng Qin, a PhD student in Computer Science at the National University of Singapore (NUS). My research interests include deep learning efficiency, focusing on data, optimizers, and large-scale training. I have a strong background in computer science and extensive experience in both academic and industry settings.</p>
-    </section>
-
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>National University of Singapore (NUS), Singapore</strong> - PhD student in Computer Science, 2021 - Present</li>
-            <li><strong>University of Southern California (USC), CA, USA</strong> - Master in Computer Science, 2020 - 2021</li>
-            <li><strong>University of Michigan, Ann Arbor (UM), MI, USA</strong> - B.S.E in Computer Science, 2017 - 2019</li>
-            <li><strong>Shanghai Jiao Tong University (SJTU), Shanghai, China</strong> - B.S.E in Electronic and Computer Engineering (ECE), 2015 - 2019</li>
+    <main id="main" class="academic-home">
+      <section id="about" class="site-shell about-grid" aria-labelledby="bio-title">
+      <aside class="profile-card" aria-label="Profile">
+        <figure class="profile-photo">
+          <img src="assets/profile-placeholder.svg" alt="Ziheng Qin initials" width="240" height="240">
+        </figure>
+        <h1>Ziheng Qin</h1>
+        <p class="profile-role">Research Scientist</p>
+        <p class="profile-affiliation">Meta</p>
+        <ul class="social-links" aria-label="Profile links">
+          <li><a href="mailto:henryqin1997@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-mail"></use></svg><span class="link-tooltip">Email</span></a></li>
+          <li><a href="https://scholar.google.com/citations?user=I04VhPMAAAAJ&hl=en" aria-label="Google Scholar"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-scholar"></use></svg><span class="link-tooltip">Google Scholar</span></a></li>
+          <li><a href="https://github.com/henryqin1997" aria-label="GitHub"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-github"></use></svg><span class="link-tooltip">GitHub</span></a></li>
+          <li><a href="https://www.linkedin.com/in/ziheng-qin-635551184/" aria-label="LinkedIn"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-linkedin"></use></svg><span class="link-tooltip">LinkedIn</span></a></li>
         </ul>
-    </section>
+      </aside>
+        <div class="biography">
+          <h2 id="bio-title">Biography</h2>
+          <!-- TODO: Ziheng will rewrite this biography in his own words. -->
+          <p>I am a researcher working on agents, efficient deep learning, data-centric AI, and large-scale model training.</p>
+          <p>My research has led to work such as <a href="https://arxiv.org/abs/2608.15089">StateM</a>, <a href="research.html#projects">InfoBatch, Dataset Growth, Info-Coevolution, and MERIT</a>, with research collaborations across Meta, TikTok, Ali Tongyi Lab, and Tencent Hunyuan Lab.</p>
+          <div class="bio-details">
+            <section aria-labelledby="interests-title">
+              <h3 id="interests-title">Interests</h3>
+              <ul class="interest-list">
+                <li>Agents</li>
+                <li>Deep learning efficiency</li>
+                <li>Data</li>
+                <li>Optimizer</li>
+                <li>Large-scale training</li>
+                <li>Multimodal learning</li>
+              </ul>
+            </section>
+            <section aria-labelledby="education-title">
+              <h3 id="education-title">Education</h3>
+              <ul class="education-list">
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-scholar"></use></svg><div>PhD student in Computer Science<span>National University of Singapore</span></div></li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-scholar"></use></svg><div>MS in Computer Science<span>University of Southern California</span></div></li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-scholar"></use></svg><div>BSE in Computer Science<span>University of Michigan</span></div></li>
+                <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-scholar"></use></svg><div>BSE in Electronic and Computer Engineering<span>Shanghai Jiao Tong University</span></div></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
 
-    <section id="experience" class="container">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>ECCV 2024: Dataset Growth</strong> (2023-2024)
-                <ul>
-                    <li>Efficient online algorithm for data cleaning and selection.</li>
-                    <li>Scalable and efficient for both single-modal and multi-modal tasks.</li>
-                </ul>
+      <section id="news" class="home-section" aria-labelledby="news-title">
+        <div class="site-shell section-grid">
+          <div class="section-heading"><h2 id="news-title">Recent News</h2></div>
+          <ul class="news-list">
+            <li>
+              <span class="list-date">Aug 2026</span>
+              <span><strong>[Research]</strong> <a href="https://arxiv.org/abs/2608.15089">StateM</a> introduced harness scaling and achieved <strong>95.3% raw accuracy on Terminal-Bench 2.1</strong>.</span>
             </li>
-            <li><strong>ICLR 2024 Oral Presentation</strong> (2022-2023)
-                <ul>
-                    <li>Developed InfoBatch for lossless training speed up via unbiased dynamic data pruning.</li>
-                    <li>Save 20% ~ 40% overall cost on classification, segmentation, detection, image generation and instruction tuning tasks.</li>
-                </ul>
+            <li>
+              <span class="list-date">2026</span>
+              <span><strong>[Release]</strong> The HY-WU technical report was released, focusing on <strong>test-time parameter adaptation</strong>.</span>
             </li>
-            <li><strong>ICCV 2023</strong> (2022-2023)
-                <ul>
-                    <li>Preventing zero-shot transfer degradation in continual learning of vision-language models</li>
-                    <li>We proposed a novel method ZSCL to prevent zero-shot transfer degradation in the continual
-                        learning of vision-language models in both feature and parameter space. We proposed a more challenging
-                        Multi-domain Task Incremental Learning (MTIL) benchmark to evaluate
-                        different methods. ZSCL outperforms other methods in the traditional class-incremental learning setting
-                        and the MTIL by 9.7% average score</li>
-                </ul>
+            <li>
+              <span class="list-date">Dec 2025</span>
+              <span><strong>[Position]</strong> Joined Meta Platforms as a Research Scientist.</span>
             </li>
+            <li>
+              <span class="list-date">2025</span>
+              <span><strong>[Paper]</strong> Info-Coevolution was accepted to ICML 2025, introducing a framework for <strong>efficient data annotation</strong>.</span>
+            </li>
+            <li>
+              <span class="list-date">2024</span>
+              <span><strong>[Paper]</strong> Dataset Growth was accepted to ECCV 2024, introducing a method for <strong>maintaining a growing multimodal dataset</strong>.</span>
+            </li>
+            <li>
+              <span class="list-date">2024</span>
+              <span><strong>[Paper]</strong> InfoBatch was accepted for an oral presentation at ICLR 2024, focusing on <strong>training-time data efficiency</strong>.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-            <li><strong>AAAI 2023 Outstanding Paper</strong> (2021-2022)
-                <ul>
-                    <li>Contributed to reducing CTR prediction model training time from 12 hours to 10 minutes on 1 GPU.</li>
-                </ul>
-            </li>
-            <li><strong>Google LLC, California, USA - Summer Intern</strong> (2021)
-                <ul>
-                    <li>Developed VM-based distributed training solution.</li>
-                </ul>
-            </li>
-            <li><strong>Shanghai Jiao Tong University & Intel, Shanghai, China - Project Member</strong> (2019)
-                <ul>
-                    <li>Developed edge cloud gaming architecture using StarlingX and Kubernetes.</li>
-                </ul>
-            </li>
-            <li><strong>University of Michigan - Student Research Project Leader</strong> (2018-2019)
-                <ul>
-                    <li>Developed table-embeddings for predicting table column names from content.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+      <section id="awards" class="home-section" aria-labelledby="awards-title">
+        <div class="site-shell section-grid">
+          <div class="section-heading">
+            <h2 id="awards-title">Selected Awards</h2>
+            <p><a href="resume.html#awards">All honors &amp; funding &rarr;</a></p>
+          </div>
+          <ul class="academic-awards">
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-award"></use></svg><div><strong>ICLR Oral</strong><p>InfoBatch · 2024</p></div></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-award"></use></svg><div><strong>AAAI Distinguished Paper Award</strong><p>CowClip · 2023</p></div></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-award"></use></svg><div><strong>200k SGD Research Funding</strong><p>TikTok · Efficient data-model co-evolution · 2024-2025</p></div></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-award"></use></svg><div><strong>Golden Prize</strong><p>SJTU-UMJI Summer Design Expo · 2019</p></div></li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, C/C++, Java</li>
-            <li><strong>Platform:</strong> Linux</li>
-            <li><strong>Development:</strong> Machine Learning, Reinforcement Learning, Deep Learning, Data Mining, Distributed Training</li>
-            <li><strong>Other:</strong> MySQL, Spark, XGBoost, CSS, JavaScript, HTML, Hadoop, MATLAB, Mathematica, PPT, LaTeX</li>
-        </ul>
-    </section>
+      <section id="experience" class="home-section" aria-labelledby="experience-title">
+        <div class="site-shell section-grid">
+          <div class="section-heading">
+            <h2 id="experience-title">Experience</h2>
+            <p>Industry &amp; research collaborations</p>
+          </div>
+          <div class="experience-list">
+          <div class="experience-row">
+            <div class="org-mark" aria-hidden="true">M</div>
+            <div>
+              <h3>Research Scientist · Meta Platforms</h3>
+              <p class="experience-meta">Dec 2025 - Present · USA</p>
+              <p>Research projects for modern recommendation architectures and AI agents/workflows for engineering production.</p>
+            </div>
+          </div>
+          <div class="experience-row">
+            <div class="org-mark" aria-hidden="true">T</div>
+            <div>
+              <h3>Research Engineer Intern · TikTok</h3>
+              <p class="experience-meta">Aug 2024 - Jun 2025 · Singapore</p>
+              <p>Efficient data-model co-evolution for continually improving models and maintaining high-quality growing datasets with affordable cleaning and active annotation.</p>
+            </div>
+          </div>
+          <div class="experience-row">
+            <div class="org-mark" aria-hidden="true">A</div>
+            <div>
+              <h3>Research Collaboration · Ali Tongyi Lab</h3>
+              <p class="experience-meta">Mar 2023 - Jul 2024 · Singapore</p>
+              <p>Research collaboration on data curation for data-centric AI, including research ideation, experiments, and paper writing. This collaboration led to first-author papers at ICLR 2024 Oral and ECCV 2024.</p>
+            </div>
+          </div>
+          <div class="experience-row">
+            <div class="org-mark" aria-hidden="true">G</div>
+            <div>
+              <h3>Software Engineer Intern · Google</h3>
+              <p class="experience-meta">May - Jul 2021 · California, USA</p>
+              <p>Designed and implemented a Terraform-based system for automatically setting up VM-based distributed training environments on cloud infrastructure.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:e0823059@u.nus.edu">e0823059@u.nus.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ziheng-qin-635551184/">Ziheng Qin</a></p>
-        <p>GitHub: <a href="https://github.com/henryqin1997">henryqin1997</a></p>
-        <p>Google Scholar: <a href="https://scholar.google.com/citations?user=I04VhPMAAAAJ">Ziheng Qin</a></p>
-    </section>
+      <section id="projects" class="home-section" aria-labelledby="projects-title">
+        <div class="site-shell section-grid">
+          <div class="section-heading">
+            <h2 id="projects-title">Projects</h2>
+            <p><a href="research.html#projects">All research &rarr;</a></p>
+          </div>
+          <div class="project-grid">
+            <article class="project-row">
+              <h3><a href="https://arxiv.org/abs/2608.15089">StateM</a></h3>
+              <p>An agent-native runtime for harness scaling, organizing execution around durable states, phase-local context, checked transitions, recoverable runbooks, and versioned procedural practices.</p>
+            </article>
+            <article class="project-row">
+              <h3><a href="research.html#projects">InfoBatch</a></h3>
+              <p>Lossless training speed-up through unbiased dynamic data pruning, with practical savings across classification, segmentation, detection, vision pretraining, diffusion, and instruction tuning.</p>
+            </article>
+            <article class="project-row">
+              <h3><a href="research.html#projects">Info-Coevolution</a></h3>
+              <p>An efficient active learning and data-model co-evolution framework for growing datasets and improving models under realistic compute and annotation budgets.</p>
+            </article>
+            <article class="project-row">
+              <h3><a href="research.html#projects">Dataset Growth</a></h3>
+              <p>An online algorithm for data cleaning and selection that maintains growing datasets with awareness of cleanliness, diversity, and sampling value.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2024 Ziheng Qin. All Rights Reserved.</p>
+      <section id="publications" class="home-section" aria-labelledby="publications-title">
+        <div class="site-shell section-grid">
+          <div class="section-heading">
+            <h2 id="publications-title">Recent Publications</h2>
+            <p><a href="research.html#publications">All publications &rarr;</a></p>
+            <div class="scholar-summary" aria-label="Google Scholar metrics checked August 2026">
+              <a href="https://scholar.google.com/citations?user=I04VhPMAAAAJ&hl=en">Google Scholar</a>
+              <dl><div><dt>Citations</dt><dd>441</dd></div><div><dt>h-index</dt><dd>6</dd></div><div><dt>i10-index</dt><dd>3</dd></div></dl>
+              <small>Checked Aug 2026</small>
+            </div>
+          </div>
+          <div class="publication-list">
+          <article class="academic-publication">
+            <h3><a href="https://arxiv.org/abs/2608.15089">StateM: Reaching 95.3% Raw Accuracy, or a $15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling</a></h3>
+            <p><strong>Ziheng Qin</strong>, Yaxin Lu, Zhangyang Atlas Wang, Kai Wang.</p>
+            <span class="publication-venue">arXiv:2608.15089, 2026</span>
+            <p class="publication-links"><a href="https://arxiv.org/abs/2608.15089">arXiv</a> · <a href="https://github.com/henryqin1997/statem">Code</a></p>
+          </article>
+          <article class="academic-publication">
+            <h3><a href="research.html#publications">Info-Coevolution: An Efficient Framework for Data Model Coevolution</a></h3>
+            <p><strong>Ziheng Qin</strong>, Hailun Xu, Wei Chee Yew, Qi Jia, Yang Luo, Kanchan Sarkar, Danhui Guan, Kai Wang, Yang You.</p>
+            <span class="publication-venue">ICML 2025</span>
+            <p class="publication-links"><a href="research.html#publications">Details</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:L8Ckcad2t8MC">Scholar</a></p>
+          </article>
+          <article class="academic-publication">
+            <h3><a href="research.html#publications">InfoBatch: Lossless Training Speed Up by Unbiased Dynamic Data Pruning</a></h3>
+            <p><strong>Ziheng Qin</strong>, Kai Wang, Zangwei Zheng, Jianyang Gu, Xiangyu Peng, Zhaopan Xu, Daquan Zhou, Lei Shang, Baigui Sun, Xuansong Xie, Yang You.</p>
+            <span class="publication-venue venue-highlight">ICLR 2024 Oral</span>
+            <p class="publication-links"><a href="research.html#publications">Details</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:d1gkVwhDpl0C">Scholar</a></p>
+          </article>
+          <article class="academic-publication">
+            <h3><a href="research.html#publications">Dataset Growth</a></h3>
+            <p><strong>Ziheng Qin</strong>, Zhaopan Xu, Yukun Zhou, Zangwei Zheng, Zebang Cheng, Hao Tang, Lei Shang, Baigui Sun, Xiaojiang Peng, Radu Timofte, Hongxun Yao, Kai Wang, Yang You.</p>
+            <span class="publication-venue">ECCV 2024</span>
+            <p class="publication-links"><a href="research.html#publications">Details</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:ULOm3_A8WrAC">Scholar</a></p>
+          </article>
+          <article class="academic-publication">
+            <h3><a href="research.html#publications">Preventing Zero-shot Transfer Degradation in Continual Learning of Vision-language Models</a></h3>
+            <p>Zangwei Zheng, Mingyuan Ma, Kai Wang, <strong>Ziheng Qin</strong>, Xiangyu Yue, Yang You.</p>
+            <span class="publication-venue">ICCV 2023</span>
+            <p class="publication-links"><a href="research.html#publications">Details</a> · <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=I04VhPMAAAAJ&citation_for_view=I04VhPMAAAAJ:u-x6o8ySG0sC">Scholar</a></p>
+          </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell footer-inner">
+        <span>© 2026 Ziheng Qin</span>
+        <span class="footer-links">
+          <a href="mailto:henryqin1997@gmail.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=I04VhPMAAAAJ&hl=en">Scholar</a>
+          <a href="https://github.com/henryqin1997">GitHub</a>
+        </span>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
